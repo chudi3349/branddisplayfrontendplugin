@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/post.css">
+    <script src="./js/posts.js"></script>
+</head>
+<body>
+  <div>
+    <h1>Title</h1>
+
+    <div id="myModal" class="modal">
+      
+    </div>
+
+    <form action="" name="form" onsubmit="return postForm(event)" method="post" enctype="multipart/form-data">
+      <label for="img">Select image:</label>
+      <input type="file" id="img" name="img" accept="image/*" required>
+      <ul>
+        <li>
+            <label for="media">Media Type:</label><br>
+            <input type="text" id="media" name="media_type" />
+          </li><br>
+          <li>
+            <label for="dimension">Dimension:</label><br>
+            <input type="text" id="dimension" name="dimension" />
+          </li><br>
+          <li>
+            <label for="image">Image Area:</label><br>
+            <input type="text" id="image" name="image_area" />
+          </li><br>
+          <li>
+            <label for="material">Material:</label><br>
+            <input type="text" id="material" name="material" />
+          </li><br>
+          <li>
+            <label for="finishing">Finishing:</label><br>
+            <input type="text" id="finishing" name="finishing" />
+          </li><br>
+          <li>
+            <label for="traffic">Traffic Speed:</label><br>
+            <input type="text" id="traffic" name="traffic_speed" />
+          </li><br>
+          <li>
+            <label for="traffic_count">Traffic Count:</label><br>
+            <input type="text" id="traffic_count" name="traffic_count" />
+          </li><br>
+          <li>
+            <label for="franchise">Franchise:</label><br>
+            <input type="text" id="franchise" name="franchise" />
+          </li><br>
+          <li>
+            <label for="visibility">Visibility:</label><br>
+            <input type="text" id="visibility" name="visibility" />
+          </li><br>
+          <li>
+            <label for="approach">Approach:</label><br>
+            <input type="text" id="approach" name="approach" />
+          </li><br>
+          <li>
+            <label for="illumination">Illumination:</label><br>
+            <input type="text" id="illumination" name="illumination" />
+          </li><br>
+          <li>
+            <label for="availability">Availability:</label><br>
+            <input type="text" id="availability" name="availability" />
+          </li><br>
+          <li>
+            <label for="annual">Annual Rate:</label><br>
+            <input type="text" id="annual" name="annual_rate" />
+          </li><br>
+          <li>
+            <label for="geo">Geo Tags:</label><br>
+            <input type="text" id="geo" name="geo_tags" />
+          </li>
+        </ul>
+
+        <input id="myAnchor" type="submit" value="Submit" class="submit-btn" />
+      </form>
+    </div>
+
+
+    <div class="u-clearfix u-sheet u-valign-middle-lg u-sheet-1">
+      <h6 class="u-text u-text-default u-text-1">Along Ariaria market, <span class="u-text-custom-color-1">aba</span></h6>
+      <p id="dataContainer" class="u-text u-text-default u-text-2"></p>
+      <img id="imageElement"> <!-- Use id="imageElement" instead of id="imageContainer" -->
+    </div>
+
+
+    <script>
+      fetchData();
+    </script>
+
+</body>
+</html>

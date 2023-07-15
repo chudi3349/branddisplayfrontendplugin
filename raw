@@ -1,0 +1,5 @@
+add_shortcode('Book-Now-Plugin', 'functionBookNow');
+
+function functionBookNow(){
+    echo('<div>Book Now</div>');
+}
