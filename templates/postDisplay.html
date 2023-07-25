@@ -4,18 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/post.css">
-  <script src="./js/posts.js"></script>
+  <link rel="stylesheet" href="./css/postDisplay.css">
+  <script src="./js/displayPost.js"></script>
   <title>Document</title>
 </head>
 <body>
-  <div class="u-clearfix u-sheet u-valign-middle-lg u-sheet-1">
-    <h6 class="u-text u-text-default u-text-1">Along Ariaria market, <span class="u-text-custom-color-1">aba</span></h6>
-    <p id="dataContainer" class="u-text u-text-default u-text-2"></p>
-    <img id="imageElement"> <!-- Use id="imageElement" instead of id="imageContainer" -->
-  </div>
+<h1>I am coming</h1>
+<form name="posts" onsubmit="return fetchData(event)" method="get">
+  <multi-input>
+    <label for="location">Display Location:</label>
+    <input id="location" class="select" list="languages" required>
+    <datalist id="languages">
+      <option value="Aba"></option>
+      <option value="Abakiliki"></option>
+      <option value="Abuja"></option>
+      <option value="Asaba"></option>
+      <option value="Benin"></option>
+      <option value="Calabar"></option>
+      <option value="Enugu"></option>
+      <option value="Lagos"></option>
+      <option value="Ogidi"></option>
+      <option value="Onitsha"></option>
+      <option value="Opi"></option>
+      <option value="PH"></option>
+      <option value="Uyo"></option>
+      <option value="Warri"></option>
+      <option value="Yenagoa"></option>
+      <option value="Yola"></option>
+      <option value="Zaria"></option>
+    </datalist>
+  </multi-input>
+  <input type="submit" value="Submit" class="submit-btn" >
+</form>
 
-  <script>
-    fetchData();
-  </script>
+<div id="dataContainer"></div>
 </body>
 </html>
